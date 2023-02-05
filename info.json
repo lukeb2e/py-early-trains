@@ -1,0 +1,16 @@
+{
+  "name": "py-early-trains",
+  "version": "0.1.0",
+  "title": "PyEarlyTrains",
+  "author": "lukeb2e",
+  "description": "This mods allows access to trains earlier in a playthrough.",
+  "homepage": "https://github.com/lukeb2e/py-early-trains",
+  "dependencies": [
+    "base >= 1.1",
+    "pyindustry >= 2.0.6",
+    "pyrawores >= 2.4.7",
+    "pypetroleumhandling >= 2.1.5",
+    "pypostprocessing >= 0.2.4"
+  ],
+  "factorio_version": "1.1"
+}
