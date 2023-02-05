@@ -13,8 +13,8 @@ RECIPE("rail"):replace_ingredient("bolts", {type = "item", name = "iron-stick", 
 -- :add_prereq("wood-processing")
 -- :remove_prereq("steel-processing")
 -- :remove_pack("utility-science-pack")
-TECHNOLOGY("railway-mk01")
-TECHNOLOGY("fluid-wagon"):add_prereq("engine")
+TECHNOLOGY("railway-mk01"):remove_prereq("automation-2"):add_prereq("engine")
+TECHNOLOGY("fluid-wagon"):add_prereq("railway-mk01")
 
 -- hard override
 data.raw.technology["railway-mk01"].unit.ingredients = {
