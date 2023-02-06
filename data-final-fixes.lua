@@ -19,19 +19,19 @@ TECHNOLOGY("fluid-wagon"):add_prereq("railway-mk01")
 -- hard override
 -- TECHNOLOGY("railway-mk01"):remove_pack("py-science-pack-1")
 data.raw.technology["railway-mk01"].unit.ingredients = {
-    {"automation-science-pack", 100}
+    {"automation-science-pack", 1}
 }
 
 data.raw.technology["fluid-wagon"].unit.ingredients = {
-    {"automation-science-pack", 100}
+    {"automation-science-pack", 1}
 }
 
 data.raw.technology["automated-rail-transportation"].unit.ingredients = {
-    {"automation-science-pack", 100}
+    {"automation-science-pack", 1}
 }
 
 data.raw.technology["rail-signals"].unit.ingredients = {
-    {"automation-science-pack", 100}
+    {"automation-science-pack", 1}
 }
 
 -- RECIPE("rail"):change_category("crafting")
