@@ -7,7 +7,7 @@ RECIPE("storage-tank"):replace_ingredient("duralumin", {type = "item", name = "i
 RECIPE("locomotive"):remove_ingredient("duralumin"):remove_ingredient("electronic-circuit")
 RECIPE("cargo-wagon"):remove_ingredient("titanium-plate")
 RECIPE("fluid-wagon"):remove_ingredient("titanium-plate")
-RECIPE("rail"):replace_ingredient("bolts", {type = "item", name = "iron-stick", amount = 4}):replace_ingredient("treated-wood", {type = "item", name = "wood", amount = 4}):remove_ingredient("solder")
+RECIPE("rail"):replace_ingredient("bolts", {type = "item", name = "iron-stick", amount = 4}):replace_ingredient("treated-wood", {type = "item", name = "wood", amount = 4}):remove_ingredient("solder"):remove_ingredient("steel-plate")
 
 -- update technology
 -- :add_prereq("wood-processing")
@@ -17,6 +17,7 @@ TECHNOLOGY("railway-mk01"):remove_prereq("automation-2"):add_prereq("engine")
 TECHNOLOGY("fluid-wagon"):add_prereq("railway-mk01")
 
 -- hard override
+-- TECHNOLOGY("railway-mk01"):remove_pack("py-science-pack-1")
 data.raw.technology["railway-mk01"].unit.ingredients = {
     {"automation-science-pack", 100}
 }
@@ -32,3 +33,6 @@ data.raw.technology["automated-rail-transportation"].unit.ingredients = {
 data.raw.technology["rail-signals"].unit.ingredients = {
     {"automation-science-pack", 100}
 }
+
+-- RECIPE("rail"):change_category("crafting")
+data.raw.recipe["rail"].category = "crafting"
