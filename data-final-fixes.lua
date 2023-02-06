@@ -4,9 +4,9 @@
 -- :replace_ingredient("iron-stick", {type = "item", name = "bolts", amount = 4})
 RECIPE("storage-tank"):replace_ingredient("duralumin", {type = "item", name = "iron-plate", amount = 20}):remove_ingredient("lead-plate")
 
-RECIPE("locomotive"):remove_ingredient("duralumin"):remove_ingredient("electronic-circuit")
-RECIPE("cargo-wagon"):remove_ingredient("titanium-plate")
-RECIPE("fluid-wagon"):remove_ingredient("titanium-plate")
+RECIPE("locomotive"):remove_ingredient("duralumin"):remove_ingredient("electronic-circuit"):remove_ingredient("intermetallics"):remove_ingredient("shaft-mk01"):remove_ingredient("gearbox-mk01"):remove_ingredient("brake-mk01")
+RECIPE("cargo-wagon"):remove_ingredient("duralumin"):remove_ingredient("titanium-plate"):remove_ingredient("intermetallics"):remove_ingredient("brake-mk01"):remove_ingredient("shaft-mk01")
+RECIPE("fluid-wagon"):remove_ingredient("titanium-plate"):remove_ingredient("duralumin"):remove_ingredient("intermetallics"):remove_ingredient("brake-mk01"):remove_ingredient("shaft-mk01")
 RECIPE("rail"):replace_ingredient("bolts", {type = "item", name = "iron-stick", amount = 4}):replace_ingredient("treated-wood", {type = "item", name = "wood", amount = 4}):remove_ingredient("solder"):remove_ingredient("steel-plate")
 
 -- update technology
